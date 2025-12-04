@@ -117,7 +117,7 @@
         <div class="phone">
           <div class="phone-screen">
             <div class="iframe-wrap">
-              <iframe src="index.html" title="معاينة الهاتف" loading="lazy" referrerpolicy="no-referrer"></iframe>
+              <iframe src="menu.html" title="معاينة الهاتف" loading="lazy" referrerpolicy="no-referrer"></iframe>
             </div>
           </div>
         </div>
@@ -265,6 +265,22 @@
         <div class="flex justify-end gap-2">
           <button id="btnSaveCatsModal" class="btn btn-primary">حفظ الفئات</button>
           <button id="btnCloseCats" class="btn btn-outline">إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- نافذة إعادة تسمية فئة -->
+  <div id="renameCatModal" class="fixed inset-0 hidden bg-black/40 backdrop-blur-sm">
+    <div class="w-full max-w-md mx-auto mt-24 bg-white rounded-xl shadow-lg overflow-hidden">
+      <div class="px-6 py-4 border-b">
+        <h3 class="text-lg font-bold text-primary">إعادة تسمية الفئة</h3>
+      </div>
+      <div class="p-6 space-y-4">
+        <input id="renameCatInput" type="text" class="input w-full" placeholder="الاسم الجديد" />
+        <div class="flex justify-end gap-2">
+          <button id="btnRenameCatCancel" class="btn btn-outline">إلغاء</button>
+          <button id="btnRenameCatSave" class="btn btn-primary">حفظ</button>
         </div>
       </div>
     </div>
@@ -514,6 +530,10 @@
       tileGovs: document.getElementById('tileGovs'),
       tileSettings: document.getElementById('tileSettings'),
       btnDownloadAssets: document.getElementById('btnDownloadAssets'),
+      renameCatModal: document.getElementById('renameCatModal'),
+      renameCatInput: document.getElementById('renameCatInput'),
+      btnRenameCatCancel: document.getElementById('btnRenameCatCancel'),
+      btnRenameCatSave: document.getElementById('btnRenameCatSave'),
     };
 
     function showEditor() {
@@ -1155,7 +1175,7 @@
       els.newCatName.value = '';
     });
 
-    els.catsList.addEventListener('click', (e) => {
+    els.catsList.addEventListener('click', async (e) => {
       const btn = e.target.closest('button');
       if (!btn) return;
       const action = btn.getAttribute('data-action');
@@ -1173,9 +1193,8 @@
         }
         return;
       } else if (action === 'rename') {
-        const newName = prompt('الاسم الجديد للفئة:', oldName);
-        if (!newName) return;
-        const finalName = newName.trim();
+        const finalName = await promptRenameCat(oldName);
+        if (!finalName) return;
         if (finalName === oldName) return;
         if (categories.includes(finalName)) {
           alert('اسم الفئة موجود بالفعل. يرجى اختيار اسم آخر.');
@@ -1248,6 +1267,23 @@
         renderCatsList();
       }
     });
+
+    function promptRenameCat(initial) {
+      return new Promise((resolve) => {
+        els.renameCatInput.value = initial || '';
+        els.renameCatModal.classList.remove('hidden');
+        const onCancel = () => { cleanup(); resolve(null); };
+        const onSave = () => { const v = (els.renameCatInput.value || '').trim(); cleanup(); resolve(v || null); };
+        function cleanup(){
+          els.btnRenameCatCancel.removeEventListener('click', onCancel);
+          els.btnRenameCatSave.removeEventListener('click', onSave);
+          els.renameCatModal.classList.add('hidden');
+        }
+        els.btnRenameCatCancel.addEventListener('click', onCancel);
+        els.btnRenameCatSave.addEventListener('click', onSave);
+        setTimeout(()=>{ els.renameCatInput.focus(); }, 50);
+      });
+    }
 
     els.catsList.addEventListener('change', (e) => {
       const sel = e.target.closest('select');
