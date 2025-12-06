@@ -14,5 +14,13 @@
     "price": 7000,
     "imageUrl": "/assets/images/1764851767900-sa.png",
     "description": "قهوة تركية"
+  },
+  {
+    "id": 1765033331383,
+    "name": "قهوة V60",
+    "category": "قهوة",
+    "price": 7000,
+    "imageUrl": "/assets/images/1765033328414-Screenshot2025-11-30163923.png",
+    "description": ""
   }
 ]
