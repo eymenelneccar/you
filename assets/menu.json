@@ -5,7 +5,7 @@
     "category": "قهوة",
     "price": 2500,
     "description": "سنجل",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.jpg"
   },
   {
     "id": 2002,
@@ -21,7 +21,7 @@
     "category": "قهوة",
     "price": 3000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.jpg"
   },
   {
     "id": 2004,
@@ -29,7 +29,7 @@
     "category": "قهوة",
     "price": 3000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.jpg"
   },
   {
     "id": 2005,
@@ -37,7 +37,7 @@
     "category": "قهوة",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.jpg"
   },
   {
     "id": 2006,
@@ -45,7 +45,7 @@
     "category": "قهوة",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.jpg"
   },
   {
     "id": 2010,
@@ -221,7 +221,7 @@
     "category": "ايس كريم",
     "price": 3000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.jpg"
   },
   {
     "id": 2051,
@@ -229,7 +229,7 @@
     "category": "ايس كريم",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.jpg"
   },
   {
     "id": 2052,
@@ -237,7 +237,7 @@
     "category": "ايس كريم",
     "price": 7000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.jpg"
   },
   {
     "id": 2060,
@@ -245,7 +245,7 @@
     "category": "ايس تي",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284909985-IMG_2876.jpeg.jpg"
   },
   {
     "id": 2061,
@@ -253,7 +253,7 @@
     "category": "ايس تي",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284900394-IMG_2876.jpeg.jpg"
   },
   {
     "id": 2062,
@@ -261,7 +261,7 @@
     "category": "ايس تي",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284891667-IMG_2876.jpeg.jpg"
   },
   {
     "id": 2063,
@@ -269,7 +269,7 @@
     "category": "ايس تي",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284881644-IMG_2876.jpeg.jpg"
   },
   {
     "id": 2070,
@@ -277,7 +277,7 @@
     "category": "موهيتو",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284118480-IMG_2861.jpeg.jpg"
   },
   {
     "id": 2071,
@@ -285,7 +285,7 @@
     "category": "موهيتو",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284104383-IMG_2862.jpeg.jpg"
   },
   {
     "id": 2072,
@@ -293,7 +293,7 @@
     "category": "موهيتو",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284144814-IMG_2860.jpeg.jpg"
   },
   {
     "id": 2073,
@@ -301,7 +301,7 @@
     "category": "موهيتو",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284159049-IMG_2863.jpeg.jpg"
   },
   {
     "id": 2074,
@@ -309,7 +309,7 @@
     "category": "موهيتو",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284181792-IMG_2864.jpeg.jpg"
   },
   {
     "id": 2075,
@@ -341,7 +341,7 @@
     "category": "كوكتيل",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284457243-IMG_2854.png"
   },
   {
     "id": 2091,
@@ -349,7 +349,7 @@
     "category": "كوكتيل",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284473948-IMG_2868.jpeg.jpg"
   },
   {
     "id": 2092,
@@ -357,7 +357,7 @@
     "category": "كوكتيل",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284487729-IMG_2866.jpeg.jpg"
   },
   {
     "id": 2093,
@@ -365,7 +365,7 @@
     "category": "كوكتيل",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284512162-IMG_2867.jpeg.jpg"
   },
   {
     "id": 2094,
@@ -373,7 +373,7 @@
     "category": "كوكتيل",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284523009-IMG_2873.jpeg.jpg"
   },
   {
     "id": 2095,
@@ -381,7 +381,7 @@
     "category": "كوكتيل",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284667926-IMG_2874.jpeg.jpg"
   },
   {
     "id": 2096,
@@ -389,7 +389,7 @@
     "category": "كوكتيل",
     "price": 3500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284687037-IMG_2875.jpeg.jpg"
   },
   {
     "id": 2100,
@@ -397,7 +397,7 @@
     "category": "ايس كوفي",
     "price": 4000,
     "description": "",
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1765285367583-IMG_2888.jpeg.jpg",
     "variants": [
       {
         "key": "v1",
@@ -431,7 +431,7 @@
     "category": "ايس كوفي",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765285374644-IMG_2888.jpeg.jpg"
   },
   {
     "id": 2102,
@@ -455,7 +455,7 @@
     "category": "ايس كوفي",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765285389083-IMG_2888.jpeg.jpg"
   },
   {
     "id": 2105,
@@ -463,7 +463,7 @@
     "category": "ايس كوفي",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765285344499-IMG_2889.jpeg.jpg"
   },
   {
     "id": 2106,
@@ -471,7 +471,7 @@
     "category": "ايس كوفي",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765285324032-IMG_2890.jpeg.jpg"
   },
   {
     "id": 2107,
@@ -479,7 +479,7 @@
     "category": "ايس كوفي",
     "price": 4000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765285014924-IMG_2888.jpeg.jpg"
   },
   {
     "id": 2110,
@@ -551,7 +551,7 @@
     "category": "آيس ماتشا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284024579-IMG_2865.jpeg.jpg"
   },
   {
     "id": 2131,
@@ -559,7 +559,7 @@
     "category": "آيس ماتشا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284014629-IMG_2865.jpeg.jpg"
   },
   {
     "id": 2132,
@@ -567,7 +567,7 @@
     "category": "آيس ماتشا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284004389-IMG_2865.jpeg.jpg"
   },
   {
     "id": 2133,
@@ -575,7 +575,7 @@
     "category": "آيس ماتشا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765284035313-IMG_2865.jpeg.jpg"
   },
   {
     "id": 2140,
