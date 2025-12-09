@@ -389,7 +389,7 @@
     "category": "كوكتيل",
     "price": 3500,
     "description": "",
-    "imageUrl": "/assets/images/1765284687037-IMG_2875.jpeg.jpg"
+    "imageUrl": ""
   },
   {
     "id": 2100,
@@ -583,7 +583,7 @@
     "category": "جديدنا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765290299924-IMG_2875.jpeg.jpg"
   },
   {
     "id": 2141,
@@ -591,7 +591,7 @@
     "category": "جديدنا",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1765290277078-IMG_2880.jpeg.jpg"
   },
   {
     "id": 2150,
