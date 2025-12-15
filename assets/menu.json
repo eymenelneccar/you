@@ -1,96 +1,596 @@
 [
-  { "id": 2001, "name": "اسبريسو", "category": "قهوة", "price": 2500, "description": "سنجل", "imageUrl": "" },
-  { "id": 2002, "name": "دوبيو", "category": "قهوة", "price": 3500, "description": "دبل شوت", "imageUrl": "" },
-  { "id": 2003, "name": "بندق", "category": "قهوة", "price": 3000, "description": "", "imageUrl": "" },
-  { "id": 2004, "name": "تركية", "category": "قهوة", "price": 3000, "description": "", "imageUrl": "" },
-  { "id": 2005, "name": "امريكانو", "category": "قهوة", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2006, "name": "فوكاتو", "category": "قهوة", "price": 4000, "description": "", "imageUrl": "" },
-
-  { "id": 2010, "name": "كابتشينو", "category": "قهوة وحليب", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2011, "name": "فانيلا", "category": "قهوة وحليب", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2012, "name": "كراميل", "category": "قهوة وحليب", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2013, "name": "بندق", "category": "قهوة وحليب", "price": 4000, "description": "", "imageUrl": "" },
-
-  { "id": 2020, "name": "لاتيه فانيلا", "category": "لاتيه", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2021, "name": "لاتيه كراميل", "category": "لاتيه", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2022, "name": "لاتيه بندق", "category": "لاتيه", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2023, "name": "سبانش لاتيه", "category": "لاتيه", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2024, "name": "لاتيه بستاشيو", "category": "لاتيه", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2025, "name": "سبشل لاتيه", "category": "لاتيه", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2026, "name": "موكا", "category": "لاتيه", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2027, "name": "هوت تشوكليت", "category": "لاتيه", "price": 3500, "description": "", "imageUrl": "" },
-
-  { "id": 2030, "name": "ميلك شيك بستاشيو", "category": "ميلك شيك", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2031, "name": "ميلك شيك لوتس", "category": "ميلك شيك", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2032, "name": "ميلك شيك اوريو", "category": "ميلك شيك", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2033, "name": "ميلك شيك نوتيلا", "category": "ميلك شيك", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2034, "name": "ميلك شيك فراولة", "category": "ميلك شيك", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2040, "name": "بلو بور", "category": "مشروب طاقة", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2041, "name": "ريد بور", "category": "مشروب طاقة", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2042, "name": "يلو بور", "category": "مشروب طاقة", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2043, "name": "مكسيكي", "category": "مشروب طاقة", "price": 3000, "description": "", "imageUrl": "" },
-
-  { "id": 2050, "name": "وسط", "category": "ايس كريم", "price": 3000, "description": "", "imageUrl": "" },
-  { "id": 2051, "name": "كبير", "category": "ايس كريم", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2052, "name": "نصف كيلو", "category": "ايس كريم", "price": 7000, "description": "", "imageUrl": "" },
-
-  { "id": 2060, "name": "ايس تي ليمون", "category": "ايس تي", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2061, "name": "ايس تي خوخ", "category": "ايس تي", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2062, "name": "ايس تي مكس بيري", "category": "ايس تي", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2063, "name": "ايس تي باشن فروت", "category": "ايس تي", "price": 3500, "description": "", "imageUrl": "" },
-
-  { "id": 2070, "name": "مكس فراولة", "category": "موهيتو", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2071, "name": "مكس بلو بيري", "category": "موهيتو", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2072, "name": "مكس ليمون نعناع", "category": "موهيتو", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2073, "name": "مكس خوخ", "category": "موهيتو", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2074, "name": "مكس رمان", "category": "موهيتو", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2075, "name": "مكس سبشل", "category": "موهيتو", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2080, "name": "شاي صباحي", "category": "شاي", "price": 1000, "description": "", "imageUrl": "" },
-  { "id": 2081, "name": "شاي مسائي", "category": "شاي", "price": 1000, "description": "", "imageUrl": "" },
-
-  { "id": 2090, "name": "سموذي فراولة", "category": "كوكتيل", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2091, "name": "سموذي استوائي", "category": "كوكتيل", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2092, "name": "سموذي خوخ", "category": "كوكتيل", "price": 4000, "description": "", "imageUrl": "" },
-  { "id": 2093, "name": "سموذي سبشل", "category": "كوكتيل", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2094, "name": "عصير برتقال", "category": "كوكتيل", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2095, "name": "عصير موز حليب", "category": "كوكتيل", "price": 3500, "description": "", "imageUrl": "" },
-  { "id": 2096, "name": "عصير ليمون نعناع", "category": "كوكتيل", "price": 3500, "description": "", "imageUrl": "" },
-
-  { "id": 2100, "name": "ايس لاتيه", "category": "ايس كوفي", "price": 4000, "description": "", "imageUrl": "", "variants": [
-    { "key": "v1", "label": "كلاسك", "price": 4000, "variantType": "" },
-    { "key": "v2", "label": "فانيلا", "price": 4500, "variantType": "" },
-    { "key": "v3", "label": "كراميل", "price": 4500, "variantType": "" },
-    { "key": "v4", "label": "بندق", "price": 4500, "variantType": "" }
-  ] },
-  { "id": 2101, "name": "ايس سبانش لاتيه", "category": "ايس كوفي", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2102, "name": "ايس لاتيه لوتس", "category": "ايس كوفي", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2103, "name": "ايس لاتيه بستاشيو", "category": "ايس كوفي", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2104, "name": "ايس لاتيه سبشل", "category": "ايس كوفي", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2105, "name": "ايس موكا", "category": "ايس كوفي", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2106, "name": "ايس كراميل مكياتو", "category": "ايس كوفي", "price": 4500, "description": "", "imageUrl": "" },
-  { "id": 2107, "name": "ايس امريكانو", "category": "ايس كوفي", "price": 4000, "description": "", "imageUrl": "" },
-
-  { "id": 2110, "name": "V60", "category": "القهوة المختصة", "price": 5000, "description": "حار - بارد", "imageUrl": "" },
-  { "id": 2111, "name": "كيمكس", "category": "القهوة المختصة", "price": 5000, "description": "حار - بارد", "imageUrl": "" },
-  { "id": 2112, "name": "أيرو بريس", "category": "القهوة المختصة", "price": 5000, "description": "حار - بارد", "imageUrl": "" },
-  { "id": 2113, "name": "كاليتا", "category": "القهوة المختصة", "price": 5000, "description": "حار - بارد", "imageUrl": "" },
-  { "id": 2114, "name": "كولد برو", "category": "القهوة المختصة", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2120, "name": "ماتشا حار", "category": "ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2121, "name": "فانيلا", "category": "ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2122, "name": "كراميل", "category": "ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2130, "name": "منجا", "category": "آيس ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2131, "name": "جوز هند", "category": "آيس ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2132, "name": "فانيلا", "category": "آيس ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2133, "name": "فراولة", "category": "آيس ماتشا", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2140, "name": "لوتكا", "category": "جديدنا", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2141, "name": "فيولا", "category": "جديدنا", "price": 5000, "description": "", "imageUrl": "" },
-
-  { "id": 2150, "name": "مياه معدنية", "category": "مياه", "price": 5000, "description": "", "imageUrl": "" },
-  { "id": 2151, "name": "مياه علامتنا التجارية", "category": "مياه", "price": 1000, "description": "", "imageUrl": "" },
-  { "id": 2152, "name": "مياه غازية", "category": "مياه", "price": 1000, "description": "", "imageUrl": "" }
+  {
+    "id": 2001,
+    "name": "اسبريسو",
+    "category": "قهوة",
+    "price": 2500,
+    "description": "سنجل",
+    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
+  },
+  {
+    "id": 2002,
+    "name": "دوبيو",
+    "category": "قهوة",
+    "price": 3500,
+    "description": "دبل شوت",
+    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
+  },
+  {
+    "id": 2003,
+    "name": "بندق",
+    "category": "قهوة",
+    "price": 3000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp"
+  },
+  {
+    "id": 2004,
+    "name": "تركية",
+    "category": "قهوة",
+    "price": 3000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp"
+  },
+  {
+    "id": 2005,
+    "name": "امريكانو",
+    "category": "قهوة",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.webp"
+  },
+  {
+    "id": 2006,
+    "name": "فوكاتو",
+    "category": "قهوة",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp"
+  },
+  {
+    "id": 2010,
+    "name": "كابتشينو",
+    "category": "قهوة وحليب",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765299237620-IMG_2881.jpeg.webp"
+  },
+  {
+    "id": 2011,
+    "name": "فانيلا",
+    "category": "قهوة وحليب",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765299226117-IMG_2881.jpeg.webp"
+  },
+  {
+    "id": 2012,
+    "name": "كراميل",
+    "category": "قهوة وحليب",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765299215871-IMG_2881.jpeg.webp"
+  },
+  {
+    "id": 2013,
+    "name": "بندق",
+    "category": "قهوة وحليب",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765299206786-IMG_2881.jpeg.webp"
+  },
+  {
+    "id": 2020,
+    "name": "لاتيه فانيلا",
+    "category": "لاتيه",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765299035122-IMG_2884.jpeg.webp"
+  },
+  {
+    "id": 2021,
+    "name": "لاتيه كراميل",
+    "category": "لاتيه",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765299023971-IMG_2882.jpeg.webp"
+  },
+  {
+    "id": 2022,
+    "name": "لاتيه بندق",
+    "category": "لاتيه",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765299011541-IMG_2881.jpeg.webp"
+  },
+  {
+    "id": 2023,
+    "name": "سبانش لاتيه",
+    "category": "لاتيه",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765298999797-IMG_2885.jpeg.webp"
+  },
+  {
+    "id": 2024,
+    "name": "لاتيه بستاشيو",
+    "category": "لاتيه",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765319994874-IMG_2928.jpeg.webp"
+  },
+  {
+    "id": 2025,
+    "name": "سبشل لاتيه",
+    "category": "لاتيه",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765298963817-IMG_2883.jpeg.webp"
+  },
+  {
+    "id": 2026,
+    "name": "موكا",
+    "category": "لاتيه",
+    "price": 4500,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2027,
+    "name": "هوت تشوكليت",
+    "category": "لاتيه",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765298949315-IMG_2923.jpeg.webp"
+  },
+  {
+    "id": 2030,
+    "name": "ميلك شيك بستاشيو",
+    "category": "ميلك شيك",
+    "price": 5000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2031,
+    "name": "ميلك شيك لوتس",
+    "category": "ميلك شيك",
+    "price": 5000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2032,
+    "name": "ميلك شيك اوريو",
+    "category": "ميلك شيك",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765124362409-IMG_2668.jpeg.webp"
+  },
+  {
+    "id": 2033,
+    "name": "ميلك شيك نوتيلا",
+    "category": "ميلك شيك",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765124354359-IMG_2669.jpeg.webp"
+  },
+  {
+    "id": 2034,
+    "name": "ميلك شيك فراولة",
+    "category": "ميلك شيك",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765124346077-IMG_2670.jpeg.webp"
+  },
+  {
+    "id": 2040,
+    "name": "بلو بور",
+    "category": "مشروب طاقة",
+    "price": 4500,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2041,
+    "name": "ريد بور",
+    "category": "مشروب طاقة",
+    "price": 4500,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2042,
+    "name": "يلو بور",
+    "category": "مشروب طاقة",
+    "price": 4500,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2043,
+    "name": "مكسيكي",
+    "category": "مشروب طاقة",
+    "price": 3000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2050,
+    "name": "وسط",
+    "category": "ايس كريم",
+    "price": 3000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.webp"
+  },
+  {
+    "id": 2051,
+    "name": "كبير",
+    "category": "ايس كريم",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.webp"
+  },
+  {
+    "id": 2052,
+    "name": "نصف كيلو",
+    "category": "ايس كريم",
+    "price": 7000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.webp"
+  },
+  {
+    "id": 2060,
+    "name": "ايس تي ليمون",
+    "category": "ايس تي",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284909985-IMG_2876.jpeg.webp"
+  },
+  {
+    "id": 2061,
+    "name": "ايس تي خوخ",
+    "category": "ايس تي",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284900394-IMG_2876.jpeg.webp"
+  },
+  {
+    "id": 2062,
+    "name": "ايس تي مكس بيري",
+    "category": "ايس تي",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284891667-IMG_2876.jpeg.webp"
+  },
+  {
+    "id": 2063,
+    "name": "ايس تي باشن فروت",
+    "category": "ايس تي",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284881644-IMG_2876.jpeg.webp"
+  },
+  {
+    "id": 2070,
+    "name": "مكس فراولة",
+    "category": "موهيتو",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284118480-IMG_2861.jpeg.webp"
+  },
+  {
+    "id": 2071,
+    "name": "مكس بلو بيري",
+    "category": "موهيتو",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284104383-IMG_2862.jpeg.webp"
+  },
+  {
+    "id": 2072,
+    "name": "مكس ليمون نعناع",
+    "category": "موهيتو",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284144814-IMG_2860.jpeg.webp"
+  },
+  {
+    "id": 2073,
+    "name": "مكس خوخ",
+    "category": "موهيتو",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284159049-IMG_2863.jpeg.webp"
+  },
+  {
+    "id": 2074,
+    "name": "مكس رمان",
+    "category": "موهيتو",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284181792-IMG_2864.jpeg.webp"
+  },
+  {
+    "id": 2075,
+    "name": "مكس سبشل",
+    "category": "موهيتو",
+    "price": 5000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2080,
+    "name": "شاي صباحي",
+    "category": "شاي",
+    "price": 1000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2081,
+    "name": "شاي مسائي",
+    "category": "شاي",
+    "price": 1000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2090,
+    "name": "سموذي فراولة",
+    "category": "كوكتيل",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284457243-IMG_2854.webp"
+  },
+  {
+    "id": 2091,
+    "name": "سموذي استوائي",
+    "category": "كوكتيل",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284473948-IMG_2868.jpeg.webp"
+  },
+  {
+    "id": 2092,
+    "name": "سموذي خوخ",
+    "category": "كوكتيل",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284487729-IMG_2866.jpeg.webp"
+  },
+  {
+    "id": 2093,
+    "name": "سموذي سبشل",
+    "category": "كوكتيل",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284512162-IMG_2867.jpeg.webp"
+  },
+  {
+    "id": 2094,
+    "name": "عصير برتقال",
+    "category": "كوكتيل",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284523009-IMG_2873.jpeg.webp"
+  },
+  {
+    "id": 2095,
+    "name": "عصير موز حليب",
+    "category": "كوكتيل",
+    "price": 3500,
+    "description": "",
+    "imageUrl": "/assets/images/1765284667926-IMG_2874.jpeg.webp"
+  },
+  {
+    "id": 2096,
+    "name": "عصير ليمون نعناع",
+    "category": "كوكتيل",
+    "price": 3500,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2100,
+    "name": "ايس لاتيه",
+    "category": "ايس كوفي",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765285367583-IMG_2888.jpeg.webp",
+    "variants": [
+      {
+        "key": "v1",
+        "label": "كلاسك",
+        "price": 4000,
+        "variantType": ""
+      },
+      {
+        "key": "v2",
+        "label": "فانيلا",
+        "price": 4500,
+        "variantType": ""
+      },
+      {
+        "key": "v3",
+        "label": "كراميل",
+        "price": 4500,
+        "variantType": ""
+      },
+      {
+        "key": "v4",
+        "label": "بندق",
+        "price": 4500,
+        "variantType": ""
+      }
+    ]
+  },
+  {
+    "id": 2101,
+    "name": "ايس سبانش لاتيه",
+    "category": "ايس كوفي",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765285374644-IMG_2888.jpeg.webp"
+  },
+  {
+    "id": 2102,
+    "name": "ايس لاتيه لوتس",
+    "category": "ايس كوفي",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765319869076-IMG_2927.jpeg.webp"
+  },
+  {
+    "id": 2103,
+    "name": "ايس لاتيه بستاشيو",
+    "category": "ايس كوفي",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765319860372-IMG_2928.jpeg.webp"
+  },
+  {
+    "id": 2104,
+    "name": "ايس لاتيه سبشل",
+    "category": "ايس كوفي",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765285389083-IMG_2888.jpeg.webp"
+  },
+  {
+    "id": 2105,
+    "name": "ايس موكا",
+    "category": "ايس كوفي",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765285344499-IMG_2889.jpeg.webp"
+  },
+  {
+    "id": 2106,
+    "name": "ايس كراميل مكياتو",
+    "category": "ايس كوفي",
+    "price": 4500,
+    "description": "",
+    "imageUrl": "/assets/images/1765285324032-IMG_2890.jpeg.webp"
+  },
+  {
+    "id": 2107,
+    "name": "ايس امريكانو",
+    "category": "ايس كوفي",
+    "price": 4000,
+    "description": "",
+    "imageUrl": "/assets/images/1765285014924-IMG_2888.jpeg.webp"
+  },
+  {
+    "id": 2110,
+    "name": "V60",
+    "category": "القهوة المختصة",
+    "price": 5000,
+    "description": "حار - بارد",
+    "imageUrl": "/assets/images/1765124090126-IMG_2664.jpeg.webp"
+  },
+  {
+    "id": 2111,
+    "name": "كيمكس",
+    "category": "القهوة المختصة",
+    "price": 5000,
+    "description": "حار - بارد",
+    "imageUrl": "/assets/images/1765124054615-IMG_2663.jpeg.webp"
+  },
+  {
+    "id": 2112,
+    "name": "أيرو بريس",
+    "category": "القهوة المختصة",
+    "price": 5000,
+    "description": "حار - بارد",
+    "imageUrl": ""
+  },
+  {
+    "id": 2113,
+    "name": "كاليتا",
+    "category": "القهوة المختصة",
+    "price": 5000,
+    "description": "حار - بارد",
+    "imageUrl": ""
+  },
+  {
+    "id": 2114,
+    "name": "كولد برو",
+    "category": "القهوة المختصة",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp"
+  },
+  {
+    "id": 2130,
+    "name": "منجا",
+    "category": "آيس ماتشا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284024579-IMG_2865.jpeg.webp"
+  },
+  {
+    "id": 2131,
+    "name": "جوز هند",
+    "category": "آيس ماتشا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284014629-IMG_2865.jpeg.webp"
+  },
+  {
+    "id": 2132,
+    "name": "فانيلا",
+    "category": "آيس ماتشا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284004389-IMG_2865.jpeg.webp"
+  },
+  {
+    "id": 2133,
+    "name": "فراولة",
+    "category": "آيس ماتشا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765284035313-IMG_2865.jpeg.webp"
+  },
+  {
+    "id": 2140,
+    "name": "لوتكا",
+    "category": "جديدنا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765290299924-IMG_2875.jpeg.webp"
+  },
+  {
+    "id": 2141,
+    "name": "فيولا",
+    "category": "جديدنا",
+    "price": 5000,
+    "description": "",
+    "imageUrl": "/assets/images/1765290277078-IMG_2880.jpeg.webp"
+  },
+  {
+    "id": 2150,
+    "name": "مياه معدنية",
+    "category": "مياه",
+    "price": 5000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2151,
+    "name": "مياه علامتنا التجارية",
+    "category": "مياه",
+    "price": 1000,
+    "description": "",
+    "imageUrl": ""
+  },
+  {
+    "id": 2152,
+    "name": "مياه غازية",
+    "category": "مياه",
+    "price": 1000,
+    "description": "",
+    "imageUrl": ""
+  }
 ]
