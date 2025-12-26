@@ -12,12 +12,6 @@
     "height": 40
   },
   {
-    "name": "لاتيه",
-    "imageUrl": "/assets/images/1765320656610-IMG_2935.jpeg.webp",
-    "span": 2,
-    "height": 40
-  },
-  {
     "name": "ميلك شيك",
     "imageUrl": "/assets/images/1765320676451-IMG_2934.jpeg.webp",
     "span": 2,
@@ -46,12 +40,6 @@
     "imageUrl": "/assets/images/1765321012618-IMG_2933.jpeg.webp",
     "span": 2,
     "height": 40
-  },
-  {
-    "name": "شاي",
-    "imageUrl": "/assets/images/1765321185807-IMG_2942.jpeg.webp",
-    "span": 1,
-    "height": 48
   },
   {
     "name": "كوكتيل",
