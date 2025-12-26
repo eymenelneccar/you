@@ -470,6 +470,30 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
         </div>
     </div>
 
+    <button id="cart-fab" class="fixed bottom-6 right-6 z-40 bg-black text-white w-14 h-14 rounded-full shadow-xl flex items-center justify-center active:scale-95 transition-transform" onclick="openCart()">
+      <span class="material-symbols-outlined">shopping_cart</span>
+      <span id="cart-count" class="absolute -top-2 -right-2 bg-red-600 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">0</span>
+    </button>
+
+    <div class="modal hidden fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm" id="cart-modal">
+      <div class="modal-content bg-white w-full max-w-md sm:rounded-2xl rounded-t-3xl shadow-2xl overflow-hidden flex flex-col relative">
+        <div class="bg-black text-white p-4 flex justify-between items-center shadow-md">
+          <button class="flex items-center gap-1 font-bold text-lg hover:opacity-80 transition-colors" onclick="closeCart()">
+            <span class="material-symbols-outlined">close</span> غلق
+          </button>
+          <div class="font-bold text-lg">السلة</div>
+          <div style="width:32px"></div>
+        </div>
+        <div class="flex-1 overflow-y-auto p-4" id="cart-content"></div>
+        <div class="p-4 border-t flex items-center justify-between gap-3">
+          <div class="font-bold text-lg whitespace-nowrap" id="cart-total"></div>
+          <button class="bg-[#25d366] hover:bg-[#20bd5a] text-white px-4 py-3 rounded-lg font-bold flex-1 active:scale-95 transition-transform" onclick="sendCartToWhatsApp()">
+            إرسال واتساب
+          </button>
+        </div>
+      </div>
+    </div>
+
 
     <!-- Data & Scripts -->
     <script>
@@ -482,6 +506,8 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
         // --- State ---
         
         let currentCategory = null;
+        const CART_KEY = 'menu_cart_v1';
+        let cart = [];
 
         // --- Functions ---
 
@@ -499,6 +525,8 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             await initDataRepoConfig();
             await initFromAssets();
             await renderHome();
+            loadCart();
+            updateCartBadge();
             const s = document.getElementById('splash');
             if (s) {
               setTimeout(() => {
@@ -617,6 +645,150 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             window.open(url, '_blank');
         }
 
+        function formatIqd(n) {
+            const v = Number(n) || 0;
+            return v > 0 ? (v.toLocaleString('ar-IQ') + ' IQD') : '';
+        }
+
+        function loadCart() {
+            try {
+                const raw = localStorage.getItem(CART_KEY);
+                const parsed = raw ? JSON.parse(raw) : [];
+                cart = Array.isArray(parsed) ? parsed : [];
+            } catch {
+                cart = [];
+            }
+            return cart;
+        }
+
+        function saveCart() {
+            try { localStorage.setItem(CART_KEY, JSON.stringify(cart || [])); } catch {}
+        }
+
+        function cartItemCount() {
+            return (Array.isArray(cart) ? cart : []).reduce((sum, it) => sum + (Number(it.qty) || 0), 0);
+        }
+
+        function cartTotal() {
+            return (Array.isArray(cart) ? cart : []).reduce((sum, it) => sum + ((Number(it.unitPrice) || 0) * (Number(it.qty) || 0)), 0);
+        }
+
+        function updateCartBadge() {
+            const el = document.getElementById('cart-count');
+            if (!el) return;
+            const c = cartItemCount();
+            el.textContent = String(c);
+            el.style.display = c > 0 ? 'flex' : 'none';
+        }
+
+        function openCart() {
+            renderCart();
+            document.getElementById('cart-modal')?.classList.remove('hidden');
+        }
+
+        function closeCart() {
+            document.getElementById('cart-modal')?.classList.add('hidden');
+        }
+
+        function renderCart() {
+            const wrap = document.getElementById('cart-content');
+            const totalEl = document.getElementById('cart-total');
+            if (!wrap || !totalEl) return;
+            const list = Array.isArray(cart) ? cart : [];
+            if (!list.length) {
+                wrap.innerHTML = `<div class="text-center text-gray-500 py-8">السلة فارغة</div>`;
+                totalEl.textContent = '';
+                return;
+            }
+            wrap.innerHTML = list.map((it, idx) => `
+                <div class="border border-black/10 rounded-xl p-3 mb-3">
+                    <div class="flex items-start justify-between gap-3">
+                        <div class="flex-1">
+                            <div class="font-bold text-lg">${it.name || ''}</div>
+                            ${it.sizeName ? `<div class="text-sm text-gray-500 mt-1">الحجم: ${it.sizeName}</div>` : ''}
+                            <div class="text-sm text-gray-700 mt-1">${formatIqd(it.unitPrice)}</div>
+                        </div>
+                        <button class="text-red-500 hover:text-red-700" onclick="removeCartItem(${idx})" aria-label="حذف">
+                            <span class="material-symbols-outlined">delete</span>
+                        </button>
+                    </div>
+                    <div class="flex items-center justify-between mt-3">
+                        <div class="flex items-center gap-2">
+                            <button class="w-9 h-9 rounded-full border border-black/20 flex items-center justify-center active:scale-95 transition-transform" onclick="decCartItem(${idx})">-</button>
+                            <span class="font-bold w-10 text-center">${Number(it.qty) || 1}</span>
+                            <button class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center active:scale-95 transition-transform" onclick="incCartItem(${idx})">+</button>
+                        </div>
+                        <div class="font-bold">${formatIqd((Number(it.unitPrice)||0) * (Number(it.qty)||0))}</div>
+                    </div>
+                </div>
+            `).join('');
+            totalEl.textContent = `المجموع: ${formatIqd(cartTotal())}`;
+        }
+
+        function incCartItem(idx) {
+            if (!Array.isArray(cart) || !cart[idx]) return;
+            cart[idx].qty = (Number(cart[idx].qty) || 0) + 1;
+            saveCart();
+            updateCartBadge();
+            renderCart();
+        }
+
+        function decCartItem(idx) {
+            if (!Array.isArray(cart) || !cart[idx]) return;
+            const q = (Number(cart[idx].qty) || 0) - 1;
+            if (q <= 0) cart.splice(idx, 1);
+            else cart[idx].qty = q;
+            saveCart();
+            updateCartBadge();
+            renderCart();
+        }
+
+        function removeCartItem(idx) {
+            if (!Array.isArray(cart) || !cart[idx]) return;
+            cart.splice(idx, 1);
+            saveCart();
+            updateCartBadge();
+            renderCart();
+        }
+
+        function addToCart(itemId, catId, sizeName) {
+            loadCart();
+            const arr = products[catId] || products['default'] || [];
+            let item = arr.find(x => String(x.id) === String(itemId));
+            if (!item) item = getProductDetails(String(itemId));
+            if (!item) return;
+            const sizes = Array.isArray(item.sizes) ? item.sizes : [];
+            const size = sizeName ? sizes.find(s => String(s.name) === String(sizeName)) : null;
+            const unitPrice = size ? (Number(size.price) || 0) : (Number(item.price) || 0);
+            const key = String(item.id) + '::' + String(sizeName || '');
+            const existing = (Array.isArray(cart) ? cart : []).find(x => String(x.key) === key);
+            if (existing) existing.qty = (Number(existing.qty) || 0) + 1;
+            else (cart = Array.isArray(cart) ? cart : []).push({ key, id: String(item.id), catId: String(catId || ''), name: item.name || '', img: item.img || '', sizeName: sizeName || '', unitPrice, qty: 1 });
+            saveCart();
+            updateCartBadge();
+        }
+
+        function sendCartToWhatsApp() {
+            const list = Array.isArray(cart) ? cart : [];
+            const phone = String(window.BRANCH_WHATSAPP || '').replace(/[^\d]/g, '');
+            if (!phone) {
+                alert('رقم الواتساب غير متوفر لهذا الفرع');
+                return;
+            }
+            if (!list.length) {
+                alert('السلة فارغة');
+                return;
+            }
+            const lines = list.map(it => {
+                const title = (it.name || '') + (it.sizeName ? ` - ${it.sizeName}` : '');
+                const qty = Number(it.qty) || 0;
+                const lineTotal = (Number(it.unitPrice) || 0) * qty;
+                return `${title} × ${qty} = ${formatIqd(lineTotal)}`;
+            }).join('\n');
+            const msg = `طلب جديد:\n${lines}\n\nالمجموع: ${formatIqd(cartTotal())}`;
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+        }
 
         async function initFromAssets() {
             try {
@@ -649,10 +821,14 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
                     const catName = (it && it.category) ? String(it.category).trim() : '';
                     const catId = (categories.find(c => c.name === catName) || { id: catName || 'default' }).id;
                     if (!products[catId]) products[catId] = [];
+                    const sizes = (Array.isArray(it && it.sizes) ? it.sizes : [])
+                        .map(s => ({ name: String(s && (s.name ?? s.label) ? (s.name ?? s.label) : '').trim(), price: Number(s && s.price) }))
+                        .filter(s => s.name && Number.isFinite(s.price) && s.price > 0);
                     products[catId].push({
                         id: String(it && it.id != null ? it.id : Date.now() + Math.random()),
                         name: (it && (it.name || it.title)) ? (it.name || it.title) : '',
                         price: Number(it && it.price) || 0,
+                        sizes,
                         desc: (it && it.description) ? it.description : '',
                         img: resolveAssetUrl((it && it.imageUrl) || '')
                     });
@@ -705,19 +881,43 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             `;
 
             items.forEach(item => {
-                html += `
-                    <div class="bg-white border border-black/10 rounded-xl overflow-hidden shadow-lg flex flex-col transform transition-all duration-300 hover:-translate-y-1 cursor-pointer" onclick="openItemPreview('${item.id}', '${catId}')">
-                        <div class="relative h-56 w-full bg-gray-100 overflow-hidden">
+                const sizes = Array.isArray(item.sizes) ? item.sizes : [];
+                const hasSizes = sizes.length > 0;
+                const imgBlock = item.img ? `
+                        <div class="relative h-40 w-full overflow-hidden">
                              <img src="${item.img}" class="w-full h-full object-cover" alt="${item.name}">
                         </div>
-                        <div class="p-4 bg-white text-black">
-                             <div class="flex justify-between items-start mb-2">
-                                <h3 class="font-black text-2xl leading-tight">${item.name}</h3>
-                                <span class="text-black font-bold text-xl whitespace-nowrap">${item.price} IQD</span>
+                ` : '';
+                const sizesHtml = hasSizes ? `
+                    <div class="space-y-2 mt-2">
+                        ${sizes.map(s => `
+                            <div class="flex items-center justify-between border border-black/10 rounded-lg px-3 py-2" onclick="event.stopPropagation()">
+                                <div class="font-bold text-sm">${s.name}</div>
+                                <div class="flex items-center gap-2">
+                                    <div class="font-bold whitespace-nowrap">${formatIqd(s.price)}</div>
+                                    <button class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center active:scale-95 transition-transform" onclick="addToCart('${item.id}', '${catId}', '${String(s.name).replace(/'/g,'\\\'')}'); event.stopPropagation();">
+                                        +
+                                    </button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                ` : '';
+                html += `
+                    <div class="bg-white border border-black/10 rounded-xl overflow-hidden shadow-lg flex flex-col transform transition-all duration-300 hover:-translate-y-1 cursor-pointer" onclick="openItemPreview('${item.id}', '${catId}')">
+                        ${imgBlock}
+                        <div class="p-3 bg-white text-black">
+                             <div class="flex justify-between items-start mb-1">
+                                <h3 class="font-black text-xl leading-tight">${item.name}</h3>
+                                ${hasSizes ? '' : `
+                                  <div class="flex items-center gap-2" onclick="event.stopPropagation()">
+                                    <span class="text-black font-bold whitespace-nowrap">${formatIqd(item.price)}</span>
+                                    <button class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center active:scale-95 transition-transform" onclick="addToCart('${item.id}', '${catId}', ''); event.stopPropagation();">+</button>
+                                  </div>
+                                `}
                              </div>
-                             <p class="text-gray-700 text-base mb-4 min-h-[3em]">${item.desc}</p>
-                             
-                             
+                             <p class="text-gray-700 text-sm mb-2">${item.desc}</p>
+                            ${sizesHtml}
                         </div>
                     </div>
                 `;
@@ -739,17 +939,35 @@ wb);O(IMG_SEARCH_ATTRIBUTION_MAP,Pd);O(IMG_GEN_REPLACE_MAP,fa.A);X();jf();h.A=0}
             if (!item) return;
             const el = document.getElementById('item-preview-content');
             if (!el) return;
-            el.innerHTML = `
-                <div class="p-4 space-y-4">
-                    <div class="relative h-56 w-full overflow-hidden">
+            const sizes = Array.isArray(item.sizes) ? item.sizes : [];
+            const hasSizes = sizes.length > 0;
+            const imgBlock = item.img ? `
+                    <div class="relative h-48 w-full overflow-hidden">
                         <img src="${item.img}" class="w-full h-full object-cover" alt="${item.name}">
                     </div>
+            ` : '';
+            el.innerHTML = `
+                <div class="p-4 space-y-4">
+                    ${imgBlock}
                     <div class="px-2">
                         <div class="flex justify-between items-start mb-2">
                             <h3 class="font-menu font-bold text-3xl">${item.name}</h3>
-                            <span class="text-black font-bold text-xl whitespace-nowrap">${item.price} IQD</span>
+                            ${hasSizes ? '' : `<div class="flex items-center gap-2"><span class="text-black font-bold text-xl whitespace-nowrap">${formatIqd(item.price)}</span><button class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center active:scale-95 transition-transform" onclick="addToCart('${item.id}', '${catId}', '');">+</button></div>`}
                         </div>
                         <p class="text-gray-700 text-base leading-relaxed">${item.desc || ''}</p>
+                        ${hasSizes ? `
+                          <div class="space-y-2 mt-4">
+                            ${sizes.map(s => `
+                              <div class="flex items-center justify-between border border-black/10 rounded-lg px-3 py-2">
+                                <div class="font-bold">${s.name}</div>
+                                <div class="flex items-center gap-2">
+                                  <div class="font-bold text-lg whitespace-nowrap">${formatIqd(s.price)}</div>
+                                  <button class="w-9 h-9 rounded-full bg-black text-white flex items-center justify-center active:scale-95 transition-transform" onclick="addToCart('${item.id}', '${catId}', '${String(s.name).replace(/'/g,'\\\'')}');">+</button>
+                                </div>
+                              </div>
+                            `).join('')}
+                          </div>
+                        ` : ''}
                     </div>
                 </div>`;
             document.getElementById('item-preview-modal')?.classList.remove('hidden');

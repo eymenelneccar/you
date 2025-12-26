@@ -89,6 +89,11 @@
               <label class="block text-sm text-gray-700 mb-1">السعر (د.ع)</label>
               <input id="fPrice" type="number" min="0" step="1" class="input w-full" placeholder="مثال: 18" />
             </div>
+            <div style="grid-column:1 / -1">
+              <label class="block text-sm text-gray-700 mb-1">الأحجام (اختياري)</label>
+              <div id="sizesList" style="display:grid; gap:.5rem;"></div>
+              <button type="button" id="btnAddSize" class="btn btn-outline" style="margin-top:.5rem;">إضافة حجم</button>
+            </div>
             <div>
               <label class="block text-sm text-gray-700 mb-1">رابط الصورة (اختياري)</label>
               <input id="fImage" type="text" inputmode="url" class="input w-full" placeholder="https://... أو assets/images/…" />
@@ -156,6 +161,8 @@
       fName: document.getElementById('fName'),
       fCategory: document.getElementById('fCategory'),
       fPrice: document.getElementById('fPrice'),
+      sizesList: document.getElementById('sizesList'),
+      btnAddSize: document.getElementById('btnAddSize'),
       fImage: document.getElementById('fImage'),
       fDesc: document.getElementById('fDesc'),
       btnUploadImage: document.getElementById('btnUploadImage'),
@@ -205,6 +212,52 @@
     function loadCategories() { try { const raw=localStorage.getItem(CATS_KEY); if (raw) { const arr=JSON.parse(raw); if (Array.isArray(arr)) return arr; } } catch {} return []; }
     function deriveCategoriesFromItems(itemsArr) { const set = new Set(itemsArr.map(i => (i.category||'').trim()).filter(Boolean)); if (!set.size) ['القهوة','الشاي','العصائر'].forEach(c=>set.add(c)); return Array.from(set); }
 
+    function normalizeSizes(raw) {
+      return (Array.isArray(raw) ? raw : [])
+        .map(s => ({ name: String(s && (s.name ?? s.label) ? (s.name ?? s.label) : '').trim(), price: Number(s && s.price) }))
+        .filter(s => s.name && Number.isFinite(s.price) && s.price > 0);
+    }
+
+    function addSizeRow(name, price) {
+      if (!els.sizesList) return;
+      const row = document.createElement('div');
+      row.className = 'size-row';
+      row.style.display = 'grid';
+      row.style.gridTemplateColumns = '1fr 1fr auto';
+      row.style.gap = '.5rem';
+      row.innerHTML = `
+        <input type="text" class="input" placeholder="مثال: كبير" value="${String(name || '').replace(/"/g,'&quot;')}" data-field="name" />
+        <input type="number" min="0" step="1" class="input" placeholder="مثال: 2000" value="${(price != null && price !== '') ? String(price).replace(/"/g,'&quot;') : ''}" data-field="price" />
+        <button type="button" class="btn btn-outline" data-action="removeSize" aria-label="حذف الحجم">×</button>
+      `;
+      els.sizesList.appendChild(row);
+    }
+
+    function renderSizesInputs(sizes) {
+      if (!els.sizesList) return;
+      els.sizesList.innerHTML = '';
+      const arr = normalizeSizes(sizes);
+      if (!arr.length) return;
+      arr.forEach(s => addSizeRow(s.name, s.price));
+    }
+
+    function readSizesFromUI() {
+      if (!els.sizesList) return [];
+      const rows = Array.from(els.sizesList.querySelectorAll('.size-row'));
+      const sizes = rows.map(r => {
+        const name = (r.querySelector('[data-field="name"]')?.value || '').trim();
+        const price = Number(r.querySelector('[data-field="price"]')?.value);
+        return { name, price };
+      });
+      return normalizeSizes(sizes);
+    }
+
+    function getSortPrice(item) {
+      const sizes = normalizeSizes(item && item.sizes);
+      if (sizes.length) return Math.min(...sizes.map(s => s.price));
+      return Number(item && item.price) || 0;
+    }
+
     function renderCatTabs() {
       if (!els.catTabs) return;
       const cats = Array.isArray(categories)?categories:[];
@@ -219,13 +272,16 @@
       els.grid.innerHTML = '';
       let list = activeCategory ? items.filter(x => (x.category||'')===activeCategory) : items.slice();
       if (itemQuery) { const q = itemQuery.toLowerCase(); list = list.filter(x => (x.name||'').toLowerCase().includes(q) || (x.description||'').toLowerCase().includes(q)); }
-      if (sortKey==='price') { list.sort((a,b)=> (Number(a.price)||0) - (Number(b.price)||0)); } else { list.sort((a,b)=> (b.id||0) - (a.id||0)); }
+      if (sortKey==='price') { list.sort((a,b)=> getSortPrice(a) - getSortPrice(b)); } else { list.sort((a,b)=> (b.id||0) - (a.id||0)); }
       if (els.itemsMeta) els.itemsMeta.textContent = `عدد الأصناف: ${list.length}`;
       if (!list.length) { els.empty.classList.remove('hidden'); return; } els.empty.classList.add('hidden');
       list.forEach(item => {
         const card = document.createElement('div');
         card.className = 'card';
         const imgSrc = resolveAssetUrl(item.imageUrl||'');
+        const sizes = normalizeSizes(item && item.sizes);
+        const priceText = (Number.isFinite(Number(item.price)) && Number(item.price)>0) ? (Number(item.price).toLocaleString('ar-IQ') + ' د.ع') : '';
+        const sizesText = sizes.length ? sizes.map(s => `${s.name}: ${Number(s.price).toLocaleString('ar-IQ')} د.ع`).join(' | ') : '';
         card.innerHTML = `
           <img src="${imgSrc}" alt="${item.name}" style="width:100%; height:160px; object-fit:cover; border-radius:12px; border:1px solid #D1D5DB; ${imgSrc?'':'display:none;'}" onerror="this.style.display='none'" />
           <div style="margin-top:.5rem">
@@ -234,7 +290,7 @@
             <p style="color:#6B7280; font-size:.85rem">${item.description||''}</p>
           </div>
           <div style="display:flex; align-items:center; justify-content:space-between; border-top:1px solid #E5E7EB; padding-top:.5rem; margin-top:.5rem;">
-            <span style="font-weight:700;">${(Number.isFinite(Number(item.price)) && Number(item.price)>0)? (Number(item.price).toLocaleString('ar-IQ') + ' د.ع') : ''}</span>
+            <span style="font-weight:700;">${sizes.length ? sizesText : priceText}</span>
             <div style="display:flex; gap:.5rem">
               <button class="btn btn-outline" data-action="edit" data-id="${item.id}">تعديل</button>
               <button class="btn btn-primary" style="background:#dc2626" data-action="delete" data-id="${item.id}">حذف</button>
@@ -252,12 +308,13 @@
       els.fName.value = item?.name || '';
       renderCategoryOptions(item?.category || categories[0] || 'القهوة');
       els.fPrice.value = item?.price != null ? item.price : '';
+      renderSizesInputs(item?.sizes || []);
       els.fImage.value = item?.imageUrl || '';
       els.fDesc.value = item?.description || '';
       showModal();
     }
 
-    function closeEditModal() { hideModal(); els.itemForm.reset(); editingId = null; }
+    function closeEditModal() { hideModal(); els.itemForm.reset(); if (els.sizesList) els.sizesList.innerHTML=''; editingId = null; }
     function openConfirmDelete(id) { pendingDeleteId = id; showConfirm(); }
     function closeConfirmDelete() { pendingDeleteId = null; hideConfirm(); }
 
@@ -277,7 +334,9 @@
     if (els.itemSearch) { els.itemSearch.addEventListener('input', ()=>{ itemQuery = els.itemSearch.value || ''; renderItems(); }); }
     if (els.sortSeg) { els.sortSeg.addEventListener('click', (e)=>{ const b=e.target.closest('button[data-key]'); if (!b) return; Array.from(els.sortSeg.querySelectorAll('button')).forEach(x=>x.classList.remove('active')); b.classList.add('active'); sortKey=b.getAttribute('data-key')||'new'; renderItems(); }); }
     els.grid.addEventListener('click',(e)=>{ const btn=e.target.closest('button'); if (!btn) return; const action=btn.getAttribute('data-action'); const id=Number(btn.getAttribute('data-id')); const item=items.find(x=>x.id===id); if (!action) return; if (action==='edit') openEditModal(item); else if (action==='delete') openConfirmDelete(id); });
-    els.itemForm.addEventListener('submit',(e)=>{ e.preventDefault(); const name=els.fName.value.trim(); const category=els.fCategory.value.trim(); const price=Number(els.fPrice.value); const imageUrl=els.fImage.value.trim(); const description=els.fDesc.value.trim(); const finalPrice= Number.isFinite(price) && price>0 ? price : 0; if (editingId!=null) { items = items.map(x=> x.id===editingId ? { ...x, name, category, price: finalPrice, imageUrl, description } : x); } else { const id = Date.now() + Math.floor(Math.random()*1000); items.push({ id, name, category, price: finalPrice, imageUrl, description }); } saveData(); renderItems(); closeEditModal(); });
+    if (els.sizesList) { els.sizesList.addEventListener('click', (e)=>{ const btn=e.target.closest('button[data-action="removeSize"]'); if (!btn) return; const row=btn.closest('.size-row'); if (row) row.remove(); }); }
+    if (els.btnAddSize) { els.btnAddSize.addEventListener('click', ()=> addSizeRow('', '')); }
+    els.itemForm.addEventListener('submit',(e)=>{ e.preventDefault(); const name=els.fName.value.trim(); const category=els.fCategory.value.trim(); const price=Number(els.fPrice.value); const sizes=readSizesFromUI(); const imageUrl=els.fImage.value.trim(); const description=els.fDesc.value.trim(); const finalPrice= Number.isFinite(price) && price>0 ? price : 0; if (editingId!=null) { items = items.map(x=> x.id===editingId ? { ...x, name, category, price: finalPrice, sizes, imageUrl, description } : x); } else { const id = Date.now() + Math.floor(Math.random()*1000); items.push({ id, name, category, price: finalPrice, sizes, imageUrl, description }); } saveData(); renderItems(); closeEditModal(); });
     els.btnAdd.addEventListener('click',()=> openEditModal(null));
     els.btnCancel.addEventListener('click', closeEditModal);
     els.btnConfirmDelete.addEventListener('click', ()=>{ if (pendingDeleteId==null) return; items = items.filter(x=> x.id!==pendingDeleteId); saveData(); renderItems(); closeConfirmDelete(); });
