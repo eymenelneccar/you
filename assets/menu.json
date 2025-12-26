@@ -23,7 +23,8 @@
     "category": "قهوة",
     "price": 3000,
     "description": "",
-    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp"
+    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2004,
