@@ -24,15 +24,42 @@
     "price": 3000,
     "description": "",
     "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp",
-    "sizes": []
+    "sizes": [
+      {
+        "name": "حلو",
+        "price": 3000
+      },
+      {
+        "name": "وسط",
+        "price": 3000
+      },
+      {
+        "name": "ساده",
+        "price": 3000
+      }
+    ]
   },
   {
     "id": 2004,
     "name": "تركية",
     "category": "قهوة",
-    "price": 3000,
+    "price": 0,
     "description": "",
-    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp"
+    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp",
+    "sizes": [
+      {
+        "name": "حلو",
+        "price": 3000
+      },
+      {
+        "name": "وسط",
+        "price": 3000
+      },
+      {
+        "name": "ساده",
+        "price": 3000
+      }
+    ]
   },
   {
     "id": 2005,
@@ -120,7 +147,8 @@
     "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
-    "imageUrl": "/assets/images/1765319994874-IMG_2928.jpeg.webp"
+    "imageUrl": "/assets/images/1766766770223-39f519d3-ea7a-4e16-889c-340e94042c0e.jpeg.jpg",
+    "sizes": []
   },
   {
     "id": 2025,
@@ -136,7 +164,8 @@
     "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1766767165252-e379915d-73c5-4489-b8de-726181d8aa77.jpeg.jpg",
+    "sizes": []
   },
   {
     "id": 2027,
@@ -426,6 +455,16 @@
         "price": 4500,
         "variantType": ""
       }
+    ],
+    "sizes": [
+      {
+        "name": "كلاسك",
+        "price": 4000
+      },
+      {
+        "name": "مع اضافه نكهه",
+        "price": 4500
+      }
     ]
   },
   {
@@ -482,7 +521,8 @@
     "category": "ايس كوفي",
     "price": 4000,
     "description": "",
-    "imageUrl": "/assets/images/1765285014924-IMG_2888.jpeg.webp"
+    "imageUrl": "/assets/images/1766767205018-fef9c278-c093-4a3a-8cde-d68372de2a95.jpeg.jpg",
+    "sizes": []
   },
   {
     "id": 2110,
@@ -601,7 +641,8 @@
     "name": "لاتيه",
     "category": "قهوة وحليب",
     "price": 4000,
-    "imageUrl": "",
-    "description": ""
+    "imageUrl": "/assets/images/1766766836249-IMG_2284.webp",
+    "description": "",
+    "sizes": []
   }
 ]
