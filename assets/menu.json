@@ -3,17 +3,19 @@
     "id": 2001,
     "name": "اسبريسو",
     "category": "قهوة",
-    "price": 2500,
+    "price": 0,
     "description": "سنجل",
-    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
-  },
-  {
-    "id": 2002,
-    "name": "دوبيو",
-    "category": "قهوة",
-    "price": 3500,
-    "description": "دبل شوت",
-    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
+    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp",
+    "sizes": [
+      {
+        "name": "سنغل شوت",
+        "price": 2500
+      },
+      {
+        "name": "دوبيو(دبل شوت)",
+        "price": 3500
+      }
+    ]
   },
   {
     "id": 2003,
@@ -41,7 +43,7 @@
   },
   {
     "id": 2006,
-    "name": "فوكاتو",
+    "name": "افوكاتو",
     "category": "قهوة",
     "price": 4000,
     "description": "",
@@ -82,7 +84,7 @@
   {
     "id": 2020,
     "name": "لاتيه فانيلا",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4000,
     "description": "",
     "imageUrl": "/assets/images/1765299035122-IMG_2884.jpeg.webp"
@@ -90,7 +92,7 @@
   {
     "id": 2021,
     "name": "لاتيه كراميل",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
     "imageUrl": "/assets/images/1765299023971-IMG_2882.jpeg.webp"
@@ -98,7 +100,7 @@
   {
     "id": 2022,
     "name": "لاتيه بندق",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
     "imageUrl": "/assets/images/1765299011541-IMG_2881.jpeg.webp"
@@ -106,7 +108,7 @@
   {
     "id": 2023,
     "name": "سبانش لاتيه",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
     "imageUrl": "/assets/images/1765298999797-IMG_2885.jpeg.webp"
@@ -114,7 +116,7 @@
   {
     "id": 2024,
     "name": "لاتيه بستاشيو",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
     "imageUrl": "/assets/images/1765319994874-IMG_2928.jpeg.webp"
@@ -122,7 +124,7 @@
   {
     "id": 2025,
     "name": "سبشل لاتيه",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 5000,
     "description": "",
     "imageUrl": "/assets/images/1765298963817-IMG_2883.jpeg.webp"
@@ -130,7 +132,7 @@
   {
     "id": 2026,
     "name": "موكا",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 4500,
     "description": "",
     "imageUrl": ""
@@ -138,7 +140,7 @@
   {
     "id": 2027,
     "name": "هوت تشوكليت",
-    "category": "لاتيه",
+    "category": "قهوة وحليب",
     "price": 3500,
     "description": "",
     "imageUrl": "/assets/images/1765298949315-IMG_2923.jpeg.webp"
@@ -592,5 +594,13 @@
     "price": 1000,
     "description": "",
     "imageUrl": ""
+  },
+  {
+    "id": 1766757421693,
+    "name": "لاتيه",
+    "category": "قهوة وحليب",
+    "price": 4000,
+    "imageUrl": "",
+    "description": ""
   }
 ]
