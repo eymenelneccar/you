@@ -4,7 +4,7 @@
     "name": "اسبريسو",
     "category": "قهوة",
     "price": 0,
-    "description": "سنجل",
+    "description": "جرعة من القهوة المختصة المركّزة بطعم قوي وفاكهي ونكهة صافية ولذيذة",
     "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp",
     "sizes": [
       {
@@ -44,7 +44,7 @@
     "name": "تركية",
     "category": "قهوة",
     "price": 0,
-    "description": "",
+    "description": "قهوة ناعمة تُحضّر على الطريقة التركية بطعم غني وقوام كثيف",
     "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp",
     "sizes": [
       {
@@ -66,24 +66,27 @@
     "name": "امريكانو",
     "category": "قهوة",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.webp"
+    "description": "إسبريسو مخفف بالماء الساخن بطعم نقي ولذيذ",
+    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2006,
     "name": "افوكاتو",
     "category": "قهوة",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp"
+    "description": "إسبريسو ساخن يُسكب فوق آيس كريم فانيلا لمزيج حار وبارد مميز",
+    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2010,
     "name": "كابتشينو",
     "category": "قهوة وحليب",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765299237620-IMG_2881.jpeg.webp"
+    "description": "إسبريسو مع حليب مبخر ورغوة كثيفة بتوازن كلاسيكي",
+    "imageUrl": "/assets/images/1765299237620-IMG_2881.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2011,
@@ -138,15 +141,16 @@
     "name": "سبانش لاتيه",
     "category": "قهوة وحليب",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765298999797-IMG_2885.jpeg.webp"
+    "description": "مزيج قهوة الاسبرسو والحليب الساخن مع اضافه الحليب المحلى يعطي طعم حلو وقوام غني",
+    "imageUrl": "/assets/images/1765298999797-IMG_2885.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2024,
     "name": "لاتيه بستاشيو",
     "category": "قهوة وحليب",
     "price": 4500,
-    "description": "",
+    "description": "لاتيه بنكهة الفستق بطعم فاخر ومميز",
     "imageUrl": "/assets/images/1766766770223-39f519d3-ea7a-4e16-889c-340e94042c0e.jpeg.jpg",
     "sizes": []
   },
@@ -155,15 +159,16 @@
     "name": "سبشل لاتيه",
     "category": "قهوة وحليب",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765298963817-IMG_2883.jpeg.webp"
+    "description": "خلطة خاصة بطابع المقهى ونكهة فريدة",
+    "imageUrl": "/assets/images/1765298963817-IMG_2883.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2026,
     "name": "موكا",
     "category": "قهوة وحليب",
     "price": 4500,
-    "description": "",
+    "description": "إسبريسو مع شوكولاتة داكنه وحليب بطعم غني ودافئ",
     "imageUrl": "/assets/images/1766767165252-e379915d-73c5-4489-b8de-726181d8aa77.jpeg.jpg",
     "sizes": []
   },
@@ -172,48 +177,54 @@
     "name": "هوت تشوكليت",
     "category": "قهوة وحليب",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765298949315-IMG_2923.jpeg.webp"
+    "description": "شوكولاتة ساخنة كريمية بطعم غني ومريح",
+    "imageUrl": "/assets/images/1765298949315-IMG_2923.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2030,
     "name": "ميلك شيك بستاشيو",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": ""
+    "description": "كريمي غني بنكهة الفستق الفاخرة، خيار لعشّاق الطعم المختلف",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2031,
     "name": "ميلك شيك لوتس",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": ""
+    "description": "مزيج ناعم من البسكويت بطعم محبوب لا يُقاوم",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2032,
     "name": "ميلك شيك اوريو",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124362409-IMG_2668.jpeg.webp"
+    "description": "قوام كثيف مع قطع أوريو حقيقية وطعم كلاسيكي لذيذ",
+    "imageUrl": "/assets/images/1765124362409-IMG_2668.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2033,
     "name": "ميلك شيك نوتيلا",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124354359-IMG_2669.jpeg.webp"
+    "description": "قوام كثيف بنكهة نوتيلا غنية ترضي عشّاق الحلا",
+    "imageUrl": "/assets/images/1765124354359-IMG_2669.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2034,
     "name": "ميلك شيك فراولة",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124346077-IMG_2670.jpeg.webp"
+    "description": "منعش وخفيف بطعم الفراولة الطبيعي ولمسة صيفية",
+    "imageUrl": "/assets/images/1765124346077-IMG_2670.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2040,
@@ -252,24 +263,27 @@
     "name": "وسط",
     "category": "ايس كريم",
     "price": 3000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.webp"
+    "description": "قوام ناعم وطعم منعش، خيار مثالي لكل الأوقات.\n٤نكهات",
+    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2051,
     "name": "كبير",
     "category": "ايس كريم",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.webp"
+    "description": "كمية أكبر من المتعة بطعم غني يشاركك اللحظة.\n٦نكهات",
+    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2052,
     "name": "نصف كيلو",
     "category": "ايس كريم",
     "price": 7000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.webp"
+    "description": "اختيار العائلة لعشّاق الآيس كريم الحقيقي",
+    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2060,
@@ -349,7 +363,8 @@
     "category": "موهيتو",
     "price": 5000,
     "description": "",
-    "imageUrl": ""
+    "imageUrl": "/assets/images/1766768853053-8c410b14-8713-461d-833b-95bed55d890d.jpeg.jpg",
+    "sizes": []
   },
   {
     "id": 2080,
@@ -642,7 +657,7 @@
     "category": "قهوة وحليب",
     "price": 4000,
     "imageUrl": "/assets/images/1766766836249-IMG_2284.webp",
-    "description": "",
+    "description": "مزيج قهوة الاسبرسو والحليب الساخن",
     "sizes": []
   }
 ]
