@@ -540,36 +540,30 @@
     "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp"
   },
   {
-    "id": 2130,
-    "name": "منجا",
-    "category": "آيس ماتشا",
-    "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284024579-IMG_2865.jpeg.webp"
-  },
-  {
-    "id": 2131,
-    "name": "جوز هند",
-    "category": "آيس ماتشا",
-    "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284014629-IMG_2865.jpeg.webp"
-  },
-  {
-    "id": 2132,
-    "name": "فانيلا",
-    "category": "آيس ماتشا",
-    "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284004389-IMG_2865.jpeg.webp"
-  },
-  {
     "id": 2133,
-    "name": "فراولة",
+    "name": "ماتشا",
     "category": "آيس ماتشا",
     "price": 5000,
     "description": "",
-    "imageUrl": "/assets/images/1765284035313-IMG_2865.jpeg.webp"
+    "imageUrl": "/assets/images/1765284035313-IMG_2865.jpeg.webp",
+    "sizes": [
+      {
+        "name": "فراولة",
+        "price": 5000
+      },
+      {
+        "name": "فانيلا",
+        "price": 5000
+      },
+      {
+        "name": "جوز هند",
+        "price": 5000
+      },
+      {
+        "name": "منجا",
+        "price": 5000
+      }
+    ]
   },
   {
     "id": 2140,
