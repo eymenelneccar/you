@@ -262,80 +262,90 @@
     "name": "ايس تي ليمون",
     "category": "ايس تي",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284909985-IMG_2876.jpeg.webp"
+    "description": "منعش وخفيف وبحموضه متوازنه يروي العطش فوراً",
+    "imageUrl": "/assets/images/1765284909985-IMG_2876.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2061,
     "name": "ايس تي خوخ",
     "category": "ايس تي",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284900394-IMG_2876.jpeg.webp"
+    "description": "طعم خوخ ناعم مع شاي بارد منعش ومحبوب",
+    "imageUrl": "/assets/images/1765284900394-IMG_2876.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2062,
     "name": "ايس تي مكس بيري",
     "category": "ايس تي",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284891667-IMG_2876.jpeg.webp"
+    "description": "مزيج توت غني بطعم فاكهي منعش ولمسة صيفية",
+    "imageUrl": "/assets/images/1765284891667-IMG_2876.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2063,
     "name": "ايس تي باشن فروت",
     "category": "ايس تي",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284881644-IMG_2876.jpeg.webp"
+    "description": "نكهة استوائية منعشة بطعم فريد وحيوي",
+    "imageUrl": "/assets/images/1765284881644-IMG_2876.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2070,
     "name": "مكس فراولة",
     "category": "موهيتو",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284118480-IMG_2861.jpeg.webp"
+    "description": "قاعدة فراولة منعشة مع إضافة سرّية تعطي طعم متوازن وتجربة مختلفة",
+    "imageUrl": "/assets/images/1765284118480-IMG_2861.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2071,
     "name": "مكس بلو بيري",
     "category": "موهيتو",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284104383-IMG_2862.jpeg.webp"
+    "description": "توت أزرق غني كأساس مع لمسة خاصة تبرز النكهة بشكل فريد",
+    "imageUrl": "/assets/images/1765284104383-IMG_2862.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2072,
     "name": "مكس ليمون نعناع",
     "category": "موهيتو",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284144814-IMG_2860.jpeg.webp"
+    "description": "ليمون ونعناع كلاسيك مع إضافة مميزة ترفع مستوى الانتعاش",
+    "imageUrl": "/assets/images/1765284144814-IMG_2860.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2073,
     "name": "مكس خوخ",
     "category": "موهيتو",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284159049-IMG_2863.jpeg.webp"
+    "description": "نكهة خوخ ناعمة ممزوجة بإضافة سرّية بطابع منعش وغير متوقّع",
+    "imageUrl": "/assets/images/1765284159049-IMG_2863.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2074,
     "name": "مكس رمان",
     "category": "موهيتو",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284181792-IMG_2864.jpeg.webp"
+    "description": "رمان غني كأساس مع لمسة خاصة تعطي عمق وطعم مختلف",
+    "imageUrl": "/assets/images/1765284181792-IMG_2864.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2075,
     "name": "مكس سبشل",
     "category": "موهيتو",
     "price": 5000,
-    "description": "",
-    "imageUrl": ""
+    "description": "خلطة حصرية تجمع أكثر من نكهة مع إضافة سرّية خاصة بالمقهى",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2080,
