@@ -368,63 +368,70 @@
     "name": "سموذي فراولة",
     "category": "كوكتيل",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284457243-IMG_2854.webp"
+    "description": "سموذي كريمي بطعم الفراولة\nوانتعاش لطيف.",
+    "imageUrl": "/assets/images/1765284457243-IMG_2854.webp",
+    "sizes": []
   },
   {
     "id": 2091,
     "name": "سموذي استوائي",
     "category": "كوكتيل",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284473948-IMG_2868.jpeg.webp"
+    "description": "مزيج فواكه استوائية يمنحك طعم منعش وحيوي",
+    "imageUrl": "/assets/images/1765284473948-IMG_2868.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2092,
     "name": "سموذي خوخ",
     "category": "كوكتيل",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284487729-IMG_2866.jpeg.webp"
+    "description": "نكهة خوخ ناعمة بقوام خفيف ومذاق متوازن",
+    "imageUrl": "/assets/images/1765284487729-IMG_2866.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2093,
     "name": "سموذي سبشل",
     "category": "كوكتيل",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284512162-IMG_2867.jpeg.webp"
+    "description": "خلطة خاصة بطابع المقهى ونكهة مختلفة ومميزة",
+    "imageUrl": "/assets/images/1765284512162-IMG_2867.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2094,
     "name": "عصير برتقال",
     "category": "كوكتيل",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284523009-IMG_2873.jpeg.webp"
+    "description": "عصير برتقال طبيعي 100٪ بدون أي إضافات",
+    "imageUrl": "/assets/images/1765284523009-IMG_2873.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2095,
     "name": "عصير موز حليب",
     "category": "كوكتيل",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284667926-IMG_2874.jpeg.webp"
+    "description": "موز طازج مع حليب بقوام غني وطعم طبيعي",
+    "imageUrl": "/assets/images/1765284667926-IMG_2874.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2096,
     "name": "عصير ليمون نعناع",
     "category": "كوكتيل",
     "price": 3500,
-    "description": "",
-    "imageUrl": ""
+    "description": "ليمون طازج مع نعناع منعش، طبيعي 100٪",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2100,
     "name": "ايس لاتيه",
     "category": "ايس كوفي",
     "price": 4000,
-    "description": "",
+    "description": "إسبريسو مع حليب بارد، يتوفر بنكهات:\nكلاسيك \nاو بندق \nفانيلا \nكراميل \nلإضافة حلا ناعمة حسب ذوقك",
     "imageUrl": "/assets/images/1765285367583-IMG_2888.jpeg.webp",
     "variants": [
       {
@@ -451,63 +458,71 @@
         "price": 4500,
         "variantType": ""
       }
-    ]
+    ],
+    "sizes": []
   },
   {
     "id": 2101,
     "name": "ايس سبانش لاتيه",
     "category": "ايس كوفي",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765285374644-IMG_2888.jpeg.webp"
+    "description": "حليب مكثف مع قهوة باردة بطعم غني ومميز",
+    "imageUrl": "/assets/images/1765285374644-IMG_2888.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2102,
     "name": "ايس لاتيه لوتس",
     "category": "ايس كوفي",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765319869076-IMG_2927.jpeg.webp"
+    "description": "نكهة اللوتس المحبوبة مع قهوة باردة وقوام كريمي.",
+    "imageUrl": "/assets/images/1765319869076-IMG_2927.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2103,
     "name": "ايس لاتيه بستاشيو",
     "category": "ايس كوفي",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765319860372-IMG_2928.jpeg.webp"
+    "description": "فستق ناعم يضيف طابع فاخر وطعم مختلف",
+    "imageUrl": "/assets/images/1765319860372-IMG_2928.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2104,
     "name": "ايس لاتيه سبشل",
     "category": "ايس كوفي",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765285389083-IMG_2888.jpeg.webp"
+    "description": "خلطة خاصة بنكهات متوازنة وتجربة فريدة",
+    "imageUrl": "/assets/images/1765285389083-IMG_2888.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2105,
     "name": "ايس موكا",
     "category": "ايس كوفي",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765285344499-IMG_2889.jpeg.webp"
+    "description": "قهوة باردة مع شوكولاتة غنية بطعم دافئ",
+    "imageUrl": "/assets/images/1765285344499-IMG_2889.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2106,
     "name": "ايس كراميل مكياتو",
     "category": "ايس كوفي",
     "price": 4500,
-    "description": "",
-    "imageUrl": "/assets/images/1765285324032-IMG_2890.jpeg.webp"
+    "description": "توازن مثالي بين القهوة والحليب والكراميل",
+    "imageUrl": "/assets/images/1765285324032-IMG_2890.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2107,
     "name": "ايس امريكانو",
     "category": "ايس كوفي",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765285014924-IMG_2888.jpeg.webp"
+    "description": "قهوة سوداء باردة بطعم قوي ومنعش",
+    "imageUrl": "/assets/images/1765285014924-IMG_2888.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2110,
