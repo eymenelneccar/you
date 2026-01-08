@@ -529,24 +529,27 @@
     "name": "V60",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": "/assets/images/1765124090126-IMG_2664.jpeg.webp"
+    "description": "حار - بارد\nقهوة مقطّرة يدويًا تُبرز النكهات الأصلية للبن بوضوح وتوازن",
+    "imageUrl": "/assets/images/1765124090126-IMG_2664.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2111,
     "name": "كيمكس",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": "/assets/images/1765124054615-IMG_2663.jpeg.webp"
+    "description": "حار - بارد\nقهوة نقية ونظيفة الطعم بقوام خفيف ولمسة فاخرة",
+    "imageUrl": "/assets/images/1765124054615-IMG_2663.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2112,
     "name": "أيرو بريس",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": ""
+    "description": "حار - بارد\nقهوة غنية وسلسة بتركيز متوازن وطعم واضح",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2113,
@@ -561,8 +564,9 @@
     "name": "كولد برو",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp"
+    "description": "قهوة باردة تُحضَّر بالنقع البارد وتغمير البن لمدة ٢٤ ساعة، لتقدّم نكهة عميقة وطعمًا قويًا بتجربة غير اعتيادية",
+    "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2133,
