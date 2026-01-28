@@ -5,23 +5,39 @@
     "category": "قهوة",
     "price": 2500,
     "description": "سنجل",
-    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
-  },
-  {
-    "id": 2002,
-    "name": "دوبيو",
-    "category": "قهوة",
-    "price": 3500,
-    "description": "دبل شوت",
-    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp"
+    "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp",
+    "sizes": [
+      {
+        "name": "سنجل",
+        "price": 2500
+      },
+      {
+        "name": "دبل",
+        "price": 2500
+      }
+    ]
   },
   {
     "id": 2003,
     "name": "بندق",
     "category": "قهوة",
-    "price": 3000,
+    "price": 0,
     "description": "",
-    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp"
+    "imageUrl": "/assets/images/1765284233337-IMG_2870.jpeg.webp",
+    "sizes": [
+      {
+        "name": "حلو",
+        "price": 3000
+      },
+      {
+        "name": "وسط",
+        "price": 3000
+      },
+      {
+        "name": "ساده",
+        "price": 3000
+      }
+    ]
   },
   {
     "id": 2004,
@@ -29,7 +45,21 @@
     "category": "قهوة",
     "price": 3000,
     "description": "",
-    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp"
+    "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp",
+    "sizes": [
+      {
+        "name": "حلو",
+        "price": 3000
+      },
+      {
+        "name": "وسط",
+        "price": 3000
+      },
+      {
+        "name": "ساده",
+        "price": 3000
+      }
+    ]
   },
   {
     "id": 2005,
@@ -41,11 +71,12 @@
   },
   {
     "id": 2006,
-    "name": "فوكاتو",
+    "name": "افوكاتو",
     "category": "قهوة",
     "price": 4000,
     "description": "",
-    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp"
+    "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2010,
