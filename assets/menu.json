@@ -4,7 +4,7 @@
     "name": "اسبريسو",
     "category": "قهوة",
     "price": 2500,
-    "description": "سنجل",
+    "description": "جرعة من القهوة المختصة المركّزة بطعم قوي وفاكهي ونكهة صافية ولذيإسبريسو \nجرعة من القهوة المختصة المركّزة بطعم زقوي وفاكهي ونكهة صافية ولذيذة",
     "imageUrl": "/assets/images/1765284250646-IMG_2871.jpeg.webp",
     "sizes": [
       {
@@ -44,7 +44,7 @@
     "name": "تركية",
     "category": "قهوة",
     "price": 3000,
-    "description": "",
+    "description": "قهوة ناعمة تُحضّر على الطريقة التركية بطعم غني وقوام كثيف.",
     "imageUrl": "/assets/images/1765284217779-IMG_2869.jpeg.webp",
     "sizes": [
       {
@@ -66,15 +66,16 @@
     "name": "امريكانو",
     "category": "قهوة",
     "price": 3500,
-    "description": "",
-    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.webp"
+    "description": "إسبريسو مخفف بالماء الساخن بطعم نقي ولذيذ",
+    "imageUrl": "/assets/images/1765284269916-IMG_2872.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2006,
     "name": "افوكاتو",
     "category": "قهوة",
     "price": 4000,
-    "description": "",
+    "description": "إسبريسو ساخن يُسكب فوق آيس كريم فانيلا لمزيج حار وبارد مميز.",
     "imageUrl": "/assets/images/1765284299102-IMG_2877.jpeg.webp",
     "sizes": []
   },
@@ -83,7 +84,7 @@
     "name": "كابتشينو",
     "category": "قهوة وحليب",
     "price": 3500,
-    "description": "",
+    "description": "إسبريسو مع حليب مبخر ورغوة كثيفة بتوازن كلاسيكي.",
     "imageUrl": "/assets/images/1765299237620-IMG_2881.jpeg.webp",
     "sizes": [
       {
@@ -661,7 +662,7 @@
       }
     ],
     "imageUrl": "",
-    "description": ""
+    "description": "مزيج قهوة الاسبرسو والحليب الساخن"
   },
   {
     "id": 1769632159821,
@@ -670,7 +671,7 @@
     "price": 4500,
     "sizes": [],
     "imageUrl": "",
-    "description": ""
+    "description": "مزيج قهوة الاسبرسو والحليب الساخن مع اضافه الحليب المحلى يعطي طعم حلو وقوام غني"
   },
   {
     "id": 1769632197836,
@@ -679,7 +680,7 @@
     "price": 5000,
     "sizes": [],
     "imageUrl": "",
-    "description": ""
+    "description": "خلطة خاصة بطابع المقهى ونكهة فريدة"
   },
   {
     "id": 1769632223081,
@@ -688,7 +689,7 @@
     "price": 4500,
     "sizes": [],
     "imageUrl": "",
-    "description": ""
+    "description": "لاتيه بنكهة الفستق بطعم فاخر ومميز"
   },
   {
     "id": 1769632240031,
@@ -697,7 +698,7 @@
     "price": 4500,
     "sizes": [],
     "imageUrl": "",
-    "description": ""
+    "description": "إسبريسو مع شوكولاتة داكنه وحليب بطعم غني ودافئ."
   },
   {
     "id": 1769632259728,
@@ -706,6 +707,6 @@
     "price": 3500,
     "sizes": [],
     "imageUrl": "",
-    "description": ""
+    "description": "شوكولاتة ساخنة كريمية بطعم غني ومريح."
   }
 ]
