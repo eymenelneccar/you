@@ -105,30 +105,6 @@
     ]
   },
   {
-    "id": 2011,
-    "name": "فانيلا",
-    "category": "قهوة وحليب",
-    "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765299226117-IMG_2881.jpeg.webp"
-  },
-  {
-    "id": 2012,
-    "name": "كراميل",
-    "category": "قهوة وحليب",
-    "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765299215871-IMG_2881.jpeg.webp"
-  },
-  {
-    "id": 2013,
-    "name": "بندق",
-    "category": "قهوة وحليب",
-    "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765299206786-IMG_2881.jpeg.webp"
-  },
-  {
     "id": 2020,
     "name": "لاتيه فانيلا",
     "category": "لاتيه",
@@ -660,5 +636,76 @@
     "price": 1000,
     "description": "",
     "imageUrl": ""
+  },
+  {
+    "id": 1769632121492,
+    "name": "لاتيه",
+    "category": "قهوة وحليب",
+    "price": 0,
+    "sizes": [
+      {
+        "name": "ساده",
+        "price": 4000
+      },
+      {
+        "name": "لاتيه فانيلا",
+        "price": 4500
+      },
+      {
+        "name": "لاتيه كراميل",
+        "price": 4500
+      },
+      {
+        "name": "لاتيه بندق",
+        "price": 4500
+      }
+    ],
+    "imageUrl": "",
+    "description": ""
+  },
+  {
+    "id": 1769632159821,
+    "name": "سبانش لاتيه",
+    "category": "قهوة وحليب",
+    "price": 4500,
+    "sizes": [],
+    "imageUrl": "",
+    "description": ""
+  },
+  {
+    "id": 1769632197836,
+    "name": "سبشل لاتيه",
+    "category": "قهوة وحليب",
+    "price": 5000,
+    "sizes": [],
+    "imageUrl": "",
+    "description": ""
+  },
+  {
+    "id": 1769632223081,
+    "name": "لاتيه بستاشيو",
+    "category": "قهوة وحليب",
+    "price": 4500,
+    "sizes": [],
+    "imageUrl": "",
+    "description": ""
+  },
+  {
+    "id": 1769632240031,
+    "name": "موكا",
+    "category": "قهوة وحليب",
+    "price": 4500,
+    "sizes": [],
+    "imageUrl": "",
+    "description": ""
+  },
+  {
+    "id": 1769632259728,
+    "name": "هوت شوكليت",
+    "category": "قهوة وحليب",
+    "price": 3500,
+    "sizes": [],
+    "imageUrl": "",
+    "description": ""
   }
 ]
