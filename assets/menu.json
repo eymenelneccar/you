@@ -175,7 +175,7 @@
     "category": "ميلك شيك",
     "price": 5000,
     "description": "كريمي غني بنكهة الفستق الفاخرة، خيار لعشّاق الطعم المختلف.",
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634412920-IMG_0425.jpeg.jpg",
     "sizes": []
   },
   {
@@ -184,7 +184,7 @@
     "category": "ميلك شيك",
     "price": 5000,
     "description": "مزيج ناعم من البسكويت بطعم محبوب لا يُقاوم.",
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634381165-IMG_0424.jpeg.jpg",
     "sizes": []
   },
   {
@@ -545,24 +545,27 @@
     "name": "V60",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": "/assets/images/1765124090126-IMG_2664.jpeg.webp"
+    "description": "حار - بارد\n\nقهوة مقطّرة يدويًا تُبرز النكهات الأصلية للبن بوضوح وتوازن.",
+    "imageUrl": "/assets/images/1765124090126-IMG_2664.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2111,
     "name": "كيمكس",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": "/assets/images/1765124054615-IMG_2663.jpeg.webp"
+    "description": "حار - بارد\nقهوة نقية ونظيفة الطعم بقوام خفيف ولمسة فاخرة.",
+    "imageUrl": "/assets/images/1765124054615-IMG_2663.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2112,
     "name": "أيرو بريس",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "حار - بارد",
-    "imageUrl": ""
+    "description": "حار - بارد\nقهوة غنية وسلسة بتركيز متوازن وطعم واضح.",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2113,
@@ -577,8 +580,9 @@
     "name": "كولد برو",
     "category": "القهوة المختصة",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp"
+    "description": "قهوة باردة تُحضَّر بالنقع البارد وتغمير البن لمدة ٢٤ ساعة، لتقدّم نكهة عميقة وطعمًا قويًا بتجربة غير اعتيادية .",
+    "imageUrl": "/assets/images/1765124044079-IMG_2662.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2133,
@@ -678,7 +682,7 @@
     "category": "قهوة وحليب",
     "price": 4500,
     "sizes": [],
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634642079-IMG_0426.jpeg.jpg",
     "description": "مزيج قهوة الاسبرسو والحليب الساخن مع اضافه الحليب المحلى يعطي طعم حلو وقوام غني"
   },
   {
@@ -687,7 +691,7 @@
     "category": "قهوة وحليب",
     "price": 5000,
     "sizes": [],
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634694156-IMG_0426.jpeg.jpg",
     "description": "خلطة خاصة بطابع المقهى ونكهة فريدة"
   },
   {
@@ -696,7 +700,7 @@
     "category": "قهوة وحليب",
     "price": 4500,
     "sizes": [],
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634767075-IMG_0426.jpeg.jpg",
     "description": "لاتيه بنكهة الفستق بطعم فاخر ومميز"
   },
   {
@@ -705,7 +709,7 @@
     "category": "قهوة وحليب",
     "price": 4500,
     "sizes": [],
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634759182-IMG_0426.jpeg.jpg",
     "description": "إسبريسو مع شوكولاتة داكنه وحليب بطعم غني ودافئ."
   },
   {
@@ -714,7 +718,7 @@
     "category": "قهوة وحليب",
     "price": 3500,
     "sizes": [],
-    "imageUrl": "",
+    "imageUrl": "/assets/images/1769634793398-IMG_0427.jpeg.jpg",
     "description": "شوكولاتة ساخنة كريمية بطعم غني ومريح."
   }
 ]
