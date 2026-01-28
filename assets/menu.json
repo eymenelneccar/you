@@ -251,24 +251,27 @@
     "name": "وسط",
     "category": "ايس كريم",
     "price": 3000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.webp"
+    "description": "قوام ناعم وطعم منعش، خيار مثالي لكل الأوقات.\n٤نكهات",
+    "imageUrl": "/assets/images/1765284352226-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2051,
     "name": "كبير",
     "category": "ايس كريم",
     "price": 4000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.webp"
+    "description": "كمية أكبر من المتعة بطعم غني يشاركك اللحظة.\n٦نكهات",
+    "imageUrl": "/assets/images/1765284329697-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2052,
     "name": "نصف كيلو",
     "category": "ايس كريم",
     "price": 7000,
-    "description": "",
-    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.webp"
+    "description": "اختيار العائلة لعشّاق الآيس كريم الحقيقي.",
+    "imageUrl": "/assets/images/1765284319711-IMG_2878.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2060,
