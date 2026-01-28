@@ -174,40 +174,45 @@
     "name": "ميلك شيك بستاشيو",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": ""
+    "description": "كريمي غني بنكهة الفستق الفاخرة، خيار لعشّاق الطعم المختلف.",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2031,
     "name": "ميلك شيك لوتس",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": ""
+    "description": "مزيج ناعم من البسكويت بطعم محبوب لا يُقاوم.",
+    "imageUrl": "",
+    "sizes": []
   },
   {
     "id": 2032,
     "name": "ميلك شيك اوريو",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124362409-IMG_2668.jpeg.webp"
+    "description": "قوام كثيف مع قطع أوريو حقيقية وطعم كلاسيكي لذيذ.",
+    "imageUrl": "/assets/images/1765124362409-IMG_2668.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2033,
     "name": "ميلك شيك نوتيلا",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124354359-IMG_2669.jpeg.webp"
+    "description": "قوام كثيف بنكهة نوتيلا غنية ترضي عشّاق الحلا.",
+    "imageUrl": "/assets/images/1765124354359-IMG_2669.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2034,
     "name": "ميلك شيك فراولة",
     "category": "ميلك شيك",
     "price": 5000,
-    "description": "",
-    "imageUrl": "/assets/images/1765124346077-IMG_2670.jpeg.webp"
+    "description": "منعش وخفيف بطعم الفراولة الطبيعي ولمسة صيفية.",
+    "imageUrl": "/assets/images/1765124346077-IMG_2670.jpeg.webp",
+    "sizes": []
   },
   {
     "id": 2040,
